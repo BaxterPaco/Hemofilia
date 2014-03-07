@@ -22,6 +22,8 @@
 		E227F14018C867F4002B22A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E227F11F18C867F4002B22A2 /* UIKit.framework */; };
 		E227F14818C867F4002B22A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E227F14618C867F4002B22A2 /* InfoPlist.strings */; };
 		E227F14A18C867F4002B22A2 /* SingleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F14918C867F4002B22A2 /* SingleViewTests.m */; };
+		E227F15518C884CF002B22A2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F15418C884CF002B22A2 /* SecondViewController.m */; };
+		E227F15718C8A47C002B22A2 /* action-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E227F15618C8A47C002B22A2 /* action-pressed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		E227F14518C867F4002B22A2 /* SingleViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingleViewTests-Info.plist"; sourceTree = "<group>"; };
 		E227F14718C867F4002B22A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E227F14918C867F4002B22A2 /* SingleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleViewTests.m; sourceTree = "<group>"; };
+		E227F15318C884CF002B22A2 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E227F15418C884CF002B22A2 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E227F15618C8A47C002B22A2 /* action-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-pressed.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E227F11E18C867F4002B22A2 /* CoreGraphics.framework in Frameworks */,
 				E227F12018C867F4002B22A2 /* UIKit.framework in Frameworks */,
+				E227F11E18C867F4002B22A2 /* CoreGraphics.framework in Frameworks */,
 				E227F11C18C867F4002B22A2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +127,9 @@
 				E227F13418C867F4002B22A2 /* ViewController.m */,
 				E227F13618C867F4002B22A2 /* Images.xcassets */,
 				E227F12218C867F4002B22A2 /* Supporting Files */,
+				E227F15318C884CF002B22A2 /* SecondViewController.h */,
+				E227F15418C884CF002B22A2 /* SecondViewController.m */,
+				E227F15618C8A47C002B22A2 /* action-pressed.png */,
 			);
 			path = SingleView;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 				E227F13718C867F4002B22A2 /* Images.xcassets in Resources */,
 				E227F12F18C867F4002B22A2 /* Main_iPhone.storyboard in Resources */,
 				E227F12618C867F4002B22A2 /* InfoPlist.strings in Resources */,
+				E227F15718C8A47C002B22A2 /* action-pressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E227F15518C884CF002B22A2 /* SecondViewController.m in Sources */,
 				E227F13518C867F4002B22A2 /* ViewController.m in Sources */,
 				E227F12C18C867F4002B22A2 /* AppDelegate.m in Sources */,
 				E227F12818C867F4002B22A2 /* main.m in Sources */,
@@ -396,6 +406,7 @@
 				GCC_PREFIX_HEADER = "SingleView/SingleView-Prefix.pch";
 				INFOPLIST_FILE = "SingleView/SingleView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,6 +420,7 @@
 				GCC_PREFIX_HEADER = "SingleView/SingleView-Prefix.pch";
 				INFOPLIST_FILE = "SingleView/SingleView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +486,7 @@
 				E227F14F18C867F4002B22A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E227F15018C867F4002B22A2 /* Build configuration list for PBXNativeTarget "SingleViewTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				E227F15218C867F4002B22A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
